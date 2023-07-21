@@ -1,0 +1,153 @@
+.robot{
+    border: 2px solid black;
+    height: 500px;
+    position: fixed;
+    width: 500px;
+    background-color: black;
+}.face{
+    position: fixed;
+    height: 100px;
+    width: 180px;
+    border: 2px solid white;
+    background-color: green;
+    border-radius: 100px 100px 15px 15px;
+    margin-top: 4%;
+    margin-left: 180px;
+    animation: fc 5s infinite;
+    transform-origin: top;
+}
+@keyframes fc{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(-10deg);}
+    0%{transform: rotate(10deg);}
+}
+.eyes .i{
+    position: fixed;
+    border: 2px solid aliceblue;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    animation: is 5s infinite ;
+}
+@keyframes is {
+    0%{transform: scale(0);}
+    50%{transform: scale(1);}
+    100%{transform: scale(-2);}
+}
+
+.eyes .i{
+    /* border-color: green; */
+    background-color: green;
+   
+}
+.eyes .i:first-child{
+    margin-top: 50px;
+    margin-left: 130px;
+}
+.eyes .i:last-child{
+    margin-top: 50px;
+    margin-left: 38px;
+}
+.horn .atn{
+    position: fixed;
+    height: 60px;
+    width: 6px;
+    background-color: green;
+    border-radius: 100px 100px 0 0;
+    z-index: -1;
+    margin-top: -30px;
+    animation: hn 5s infinite;
+    transform-origin: bottom;
+}
+@keyframes hn{
+    0%{transform: rotate(0); }
+    50%{transform: rotate(-40deg);}
+    100%{transform: rotate(40deg);}
+
+}
+.horn .atn:first-child{
+    margin-left: 25px;
+    transform: rotate(-20deg);
+}
+.horn .atn:last-child{
+    margin-left: 140px;
+    transform: rotate(20deg);
+}
+
+.body
+{
+    position: fixed;
+    height: 160px;
+    width: 180px;
+    border: 2px solid white;
+    background-color: green;
+    border-radius: 10px 10px 15px 15px;
+    margin-top: 155px;
+    margin-left: 180px;
+    transform-origin: top;
+    animation: bdy 5s infinite;
+}
+@keyframes bdy{
+    0% {transform: 0deg;}
+    50% {transform: rotate(6deg);}
+    100%{transform: rotate(-6deg);}
+}
+.leg .l
+{
+    position: fixed;
+    height: 110px;
+    width: 30px;
+    border: 2px solid white;
+    background-color: green;
+    border-radius: 20px 10px 20px 20px;
+    
+    margin-top: 290px;
+    z-index: -1;
+    transform-origin: top;
+    animation: lg 5s infinite;
+}
+@keyframes lg{
+    0% {transform: 0deg;}
+    50% {transform: rotate(60deg);}
+    100%{transform: rotate(-60deg);}
+}
+.leg .l:first-child
+{
+    margin-left: 210px;
+}
+.leg .l:last-child{
+    
+    margin-left: 299px;
+}
+.hand .h{
+    position: fixed;
+    border: 2px solid white;
+    height: 110px;
+    width: 30px;
+    background-color: green;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 20px;
+    transform-origin: top;
+    /* animation: hnd 5s infinite; */
+}
+.hand .h:first-child{
+    margin-left: -32px; 
+    animation: hnd 5s infinite;
+}
+.hand .h:last-child{   
+    margin-left: 182px;
+    animation: hnds 5s infinite; 
+}
+@keyframes hnd{
+    
+    0% {transform: 0deg;}
+    50% {transform: rotate(90deg);}
+    100%{transform: rotate(-90deg);}
+}
+@keyframes hnds{
+    
+    0% {transform: 0deg;}
+    50% {transform: rotate(-90deg);}
+    100%{transform: rotate(90deg);}
+}
